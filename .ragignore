@@ -1,0 +1,311 @@
+# .ragignore — files and directories the RAG indexer should skip.
+# Uses .gitignore-style patterns. Anything NOT matched here is a candidate for
+# indexing, so readable formats (txt, md, rst, docx, pdf, py, ipynb, c/cpp/h,
+# js/ts/jsx/tsx, java, go, rs, sh, sql, html, css, json, yaml, toml, ...) are
+# intentionally left out of this list.
+
+# ---------------------------------------------------------------------------
+# Virtual environments
+# ---------------------------------------------------------------------------
+env/
+venv/
+.venv/
+virtualenv/
+.conda/
+conda-env/
+
+# ---------------------------------------------------------------------------
+# Environment variables & secrets (never embed credentials)
+# ---------------------------------------------------------------------------
+*env
+.env.*
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+*.gpg
+*.asc
+.netrc
+.npmrc
+.pypirc
+credentials*.json
+secrets.*
+*.secret
+
+# ---------------------------------------------------------------------------
+# Caches
+# ---------------------------------------------------------------------------
+*cache__
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.parcel-cache/
+.eslintcache
+.turbo/
+.sass-cache/
+.gradle/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Version control & tooling metadata
+# ---------------------------------------------------------------------------
+.git/
+.svn/
+.hg/
+.bzr/
+.idea/
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Dependencies (third-party code, not yours)
+# ---------------------------------------------------------------------------
+node_modules/
+bower_components/
+jspm_packages/
+vendor/
+site-packages/
+.pnpm-store/
+.yarn/
+
+# Lock files: huge, auto-generated, low signal
+*.lock
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+poetry.lock
+Pipfile.lock
+Cargo.lock
+composer.lock
+Gemfile.lock
+go.sum
+
+# ---------------------------------------------------------------------------
+# Build output & compiled artifacts
+# ---------------------------------------------------------------------------
+build/
+dist/
+out/
+target/
+bin/
+obj/
+_build/
+.next/
+.nuxt/
+.svelte-kit/
+.output/
+.angular/
+coverage/
+htmlcov/
+.coverage
+.coverage.*
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# Python bytecode / native extensions
+*.pyc
+*.pyo
+*.pyd
+
+# C / C++ / native objects and binaries
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.pdb
+*.ilk
+*.exp
+*.gch
+*.pch
+*.ko
+
+# JVM / .NET
+*.class
+*.jar
+*.war
+*.ear
+*.nupkg
+
+# Minified / bundled / generated web assets
+*.min.js
+*.min.css
+*.bundle.js
+*.chunk.js
+*.map
+*.tsbuildinfo
+
+# ---------------------------------------------------------------------------
+# Logs & temp files
+# ---------------------------------------------------------------------------
+logs/
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.pid
+tmp/
+temp/
+
+# ---------------------------------------------------------------------------
+# Archives & disk images
+# ---------------------------------------------------------------------------
+*.zip
+*.tar
+*.gz
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.iso
+*.dmg
+*.img
+*.vhd
+*.vmdk
+*.msi
+*.deb
+*.rpm
+*.apk
+*.ipa
+
+# ---------------------------------------------------------------------------
+# Media (no extractable text without OCR / transcription)
+# ---------------------------------------------------------------------------
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.webp
+*.ico
+*.icns
+*.heic
+*.psd
+*.ai
+*.eps
+*.raw
+*.cr2
+*.nef
+# Audio
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+*.m4a
+*.wma
+*.mid
+*.midi
+# Video
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.m4v
+# Fonts
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
+
+# ---------------------------------------------------------------------------
+# Databases & binary data files
+# ---------------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.mdb
+*.accdb
+*.parquet
+*.feather
+*.arrow
+*.avro
+*.orc
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.nc
+*.mat
+*.dat
+*.bin
+
+# ---------------------------------------------------------------------------
+# ML models & checkpoints
+# ---------------------------------------------------------------------------
+*.gguf
+*.ggml
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.pb
+*.mlmodel
+*.keras
+mlruns/
+wandb/
+lightning_logs/
+checkpoints/
+
+# ---------------------------------------------------------------------------
+# Vector stores / RAG index output (don't index the index)
+# ---------------------------------------------------------------------------
+chroma/
+.chroma/
+chroma_db/
+faiss_index/
+*.faiss
+*.index
+lancedb/
+.lancedb/
+qdrant_storage/
+
+# ---------------------------------------------------------------------------
+# Office temp / lock files (real .docx/.pdf/.xlsx are still indexed)
+# ---------------------------------------------------------------------------
+~$*
+.~lock.*#
