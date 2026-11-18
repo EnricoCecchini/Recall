@@ -1,0 +1,37 @@
+Hello, my name is John Smith and I am a Business Analyst hired by Marvel Studios.
+The Marvel Cinematic Universe, commonly known as the MCU, has earned $34.7 billion worldwide across 6 phases.
+This earning, however, has been pretty uneven, so my task was to identify what drives revenue,
+analyzing budget, opening weekend, ratings and domestic and worldwide box office to help create an
+action plan that can be implemented in the coming phases to increase box office earnings.
+
+The MCU is a hit machine, which has built a complex cinematic universe, interconnecting multiple films,
+series and specials across 18 years. Each phase has generated a multi-billion dollar box office, however,
+the majority of earnings for the MCU have been concentrated in Phase 3, which generated a 13.5 billion dollars
+across 11 films, approximately 39% of the total MCU's box office. Some factors that can be attributed to this
+are the large number of films concentrated in this phase, and the high average ratings for the films in this
+era. Phase 6, the current phase, is close to matching the ratings, having an average of 88 across only 2 films,
+with 2 upcoming heavy hitters with a lot of talk behind them: Avengers Doomsday and Avengers Secret Wars.
+
+Box office openings for Avengers movies have consistently been outliers, with Avengers Endgame and Infinity War
+from Phase 3 being some of the highest earners in the MCU's history, as well as having some of the largest box
+office openings which have a high correlation to total box office earnings.
+Historically speaking, MCU films that have opened above $200M have earned 2.7x higher than
+the rest, which brings us to the main point of this project.
+
+The MCU doesn't need more films, it needs more events.
+
+Building up hype for heavy hitters, increasing marketing, building up the audience to these movies as some
+grand event has been shown to have a huge impact in box office earnings. Infinitey War and Endgame were the
+result of 3 phases of build up, and they became the some of the highest grossing films in cinematic history.
+
+With this in mind, I propose a 2 step plan of action. Concentrate budget and marketing on event films,
+and shift release and marketing towards foreign markets. As mentioned, there is a high correlation between
+a film's opening weekend and it's worldwide box office, so turning a film's release into a huge event will
+increase it's opening earnings, while foreign markets make up 60% of total box office, so a small percentage
+increase in the foreign market would reflect as a potential multi-billion dollar earning increase.
+
+Foreign box office for MCU films represents 20.8 of the 34.7 billion total earnings, so even a 5% increase would
+equate to about one billion dollars.
+
+The MCU is already a hit machine. With Doomsday and Secret Wars coming, we have the oportunity to make the
+MCU feel like an event again.

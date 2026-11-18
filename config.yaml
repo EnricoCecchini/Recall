@@ -1,0 +1,8 @@
+paths:
+  source_data: './data'
+llm:
+  provider: "llama_cpp"
+  model: "test"
+embeddings:
+  provider: "llama_cpp"
+  model: "test"
